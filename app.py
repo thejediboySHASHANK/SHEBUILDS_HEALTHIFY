@@ -68,9 +68,9 @@ def predict():
     output1='{0:.{1}f}'.format(prediction[0][0], 2)
     output2='{0:.{1}f}'.format(prediction[0][1], 2)
     output3='{0:.{1}f}'.format(prediction[0][2], 2)
-    output4='{0:.{1}f}'.format(prediction[0][3], 2)
+    # output4='{0:.{1}f}'.format(prediction[0][3], 2)
 
-    return render_template('index.html',pred1='BMI is : {}'.format(output1), pred2='BMR is {}' .format(output2), pred3='Calories is {}' .format(output3), pred4='Activity Level {}' .format(output4), bhai="kuch karna hain iska ab?")
+    return render_template('index.html',pred1='BMI is : {}'.format(output1), pred2='BMR is {}' .format(output2), pred3='Calories is {}' .format(output3), bhai="kuch karna hain iska ab?")
 
 
 if __name__ == '__main__':
